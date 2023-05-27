@@ -81,21 +81,13 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
 CREATE DATABASE AcademiaDb1;
 
 CREATE TABLE Pessoa(
-
 Id INT PRIMARY KEY IDENTITY (1,1),
-
 Nome VARCHAR (255),
-
 Telefone VARCHAR (20),
-
 Data_Nascimento DATE,
-
 Email VARCHAR (255),
-
 SEXO CHAR (1),
-
 CPF VARCHAR (15)
-
 );
 
 CREATE TABLE Plano (
