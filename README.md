@@ -66,8 +66,7 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
-PESSOA: Tabela que armazena informações das pessoas(clientes e instrutores).
-
+PESSOA: Tabela que armazena informações das pessoas(clientes e instrutores).&nbsp
 ALUNO: Tabela que indica quais pessoas são alunos e armazena os dados desses alunos.
 
 INSTRUTOR: Tabela que indica quais pessoas são instrutores e armazena os dados desses instrutores.
