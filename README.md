@@ -71,7 +71,7 @@ ALUNO: Tabela que indica quais pessoas são alunos e armazena os dados desses al
 INSTRUTOR: Tabela que indica quais pessoas são instrutores e armazena os dados desses instrutores.
 TREINO: Tabela que indica quais repetições de exercícios compõem o treino de cada pessoa.
 REPETIÇÕES: Tabela que armazena quantas repetições e indica qual exercício deve ser feito.
-TIPO_EXERCICIO: Tabela que armazena os tipos de exercícios que podem ser feitos e quais aparelhos eles usam.
+TIPO_EXERCICIO: Tabela que armazena os tipos de exercícios que podem ser feitos e quais aparelhos eles usam. 
 APARELHOS: Tabela armazena as informações dos aparelhos presentes na academia.
 
 ### 6	MODELO LÓGICO<br>
