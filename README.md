@@ -184,8 +184,7 @@ CREATE TABLE Repeticoes (
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 	
-	Inserção no banco principal.
-![Alt text](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Inserção%20nas%20tabelas.sql)
+![Inserção no banco principal](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Inserção%20nas%20tabelas.sql)
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
