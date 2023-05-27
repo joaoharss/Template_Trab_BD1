@@ -189,7 +189,7 @@ CREATE TABLE Repeticoes (<br>
 	Segue as informações para criar um banco teste e testar os creates para ver se a restauração está funcionando:
 
 ![Instrução para criar o banco](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Create%20database.sql)
-![Instrução para criar as tabelas](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Create%20database.sql)
+![Instrução para criar as tabelas](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Create%20das%20tabelas.sql)
 ![Instrução para popular s tabelas](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Insert%20no%20banco%20de%20teste.sql)
 ![Instrução para apagar todas as tabelas](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/Drop%20das%20tabelas.sql)
 
