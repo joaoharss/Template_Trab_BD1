@@ -87,14 +87,14 @@ APARELHOS: Tabela armazena as informações dos aparelhos presentes na academia.
      
 CREATE DATABASE AcademiaDb1;
 
-CREATE TABLE Pessoa(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Nome VARCHAR (255),
-	Telefone VARCHAR (20),
-	Data_Nascimento DATE,
-	Email VARCHAR (255),
-	Sexo CHAR (1),
-	Cpf VARCHAR (15)
+CREATE TABLE Pessoa(<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Nome VARCHAR (255),<br>
+	Telefone VARCHAR (20),<br>
+	Data_Nascimento DATE,<br>
+	Email VARCHAR (255),<br>
+	Sexo CHAR (1),<br>
+	Cpf VARCHAR (15)<br>
 );
 
 CREATE TABLE Aluno (
