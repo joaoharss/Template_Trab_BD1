@@ -79,7 +79,7 @@ APARELHOS: Tabela armazena as informações dos aparelhos presentes na academia.
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
-![Alt text](https://uploaddeimagens.com.br/images/004/484/647/original/TBD_modelo_fisico.jpg?1685224424)
+![Alt text](https://github.com/joaoharss/Template_Trab_BD1/blob/master/images/modelo%20logico.jpg)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
