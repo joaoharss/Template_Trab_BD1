@@ -52,7 +52,6 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
-![Alt text](https://ibb.co/5Y3vdRQ)
     
         
     
