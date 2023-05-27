@@ -202,49 +202,9 @@ FROM Aluno;
 ![Alt text](https://uploaddeimagens.com.br/images/004/484/738/original/image5.png?1685227259)
 
 SELECT *
-FROM Aparelhos;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/736/original/image4.png?1685227240)
-
-SELECT *
-FROM Historico;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/743/original/image9.png?1685227325)
-
-SELECT *
 FROM Instrutor;
 
 ![Alt text](https://uploaddeimagens.com.br/images/004/484/735/original/image3.png?1685227225)
-
-SELECT *
-FROM Pagamento;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/745/original/image11.png?1685227355)
-
-SELECT *
-FROM Pagamento_Plano;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/730/original/image1.png?1685227184)
-
-SELECT *
-FROM Pessoa;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/740/original/image7.png?1685227294)
-
-SELECT *
-FROM Plano;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/741/original/image8.png?1685227314)
-
-SELECT *
-FROM Repeticoes;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/744/original/image10.png?1685227335)
-
-SELECT *
-FROM Tipo_Exercicio;
-
-![Alt text](https://uploaddeimagens.com.br/images/004/484/739/original/image6.png?1685227278)
 
 SELECT *
 FROM Treino;
