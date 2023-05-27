@@ -66,6 +66,13 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
+PESSOA: Tabela que armazena informações das pessoas(clientes e instrutores).
+ALUNO: Tabela que indica quais pessoas são alunos e armazena os dados desses alunos.
+INSTRUTOR: Tabela que indica quais pessoas são instrutores e armazena os dados desses instrutores.
+TREINO: Tabela que indica quais repetições de exercícios compõem o treino de cada pessoa.
+REPETIÇÕES: Tabela que armazena quantas repetições e indica qual exercício deve ser feito.
+TIPO_EXERCICIO: Tabela que armazena os tipos de exercícios que podem ser feitos e quais aparelhos eles usam.
+APARELHOS: Tabela armazena as informações dos aparelhos presentes na academia.
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
