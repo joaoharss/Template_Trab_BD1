@@ -51,7 +51,6 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
 ![Alt text](https://uploaddeimagens.com.br/images/004/484/648/original/TBD_modelo_conceitual.jpg?1685224538)
     
         
@@ -72,6 +71,8 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
+
+![Alt text](https://uploaddeimagens.com.br/images/004/484/647/original/TBD_modelo_fisico.jpg?1685224424)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
