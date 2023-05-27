@@ -77,7 +77,86 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
-        
+     
+CREATE DATABASE AcademiaDb1;
+CREATE TABLE Pessoa(
+Id INT PRIMARY KEY IDENTITY (1,1),
+Nome VARCHAR (255),
+Telefone VARCHAR (20),
+Data_Nascimento DATE,
+Email VARCHAR (255),
+SEXO CHAR (1),
+CPF VARCHAR (15)
+);
+
+CREATE TABLE Plano (
+Id INT PRIMARY KEY IDENTITY (1,1),
+Nome VARCHAR (255),
+Preco FLOAT
+);
+
+CREATE TABLE Aluno (
+Id INTEGER PRIMARY KEY IDENTITY (1,1),
+Id_Pessoa INT,
+Id_Plano INT,
+FOREIGN KEY (Id_Pessoa) REFERENCES Pessoa (Id),
+FOREIGN KEY (Id_Plano) REFERENCES Plano (Id),
+Peso FLOAT,
+Altura FLOAT,
+Data_Matricula DATETIME,
+Historico_Medico VARCHAR (MAX)
+);
+
+CREATE TABLE Instrutor (
+Id INT PRIMARY KEY IDENTITY (1,1),
+Id_Pessoa INT,
+FOREIGN KEY (Id_Pessoa) REFERENCES Pessoa (Id),
+Horario TIME,
+Data_Contratacao DATE,
+Especialidade VARCHAR(30)
+);
+
+CREATE TABLE Treino (
+Id INT PRIMARY KEY IDENTITY (1,1),
+Id_Aluno INT,
+Id_Instrutor INT,
+FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),
+FOREIGN KEY (Id_Instrutor) REFERENCES Instrutor (Id)
+);
+
+CREATE TABLE Aparelhos (
+Id INT PRIMARY KEY IDENTITY (1,1),
+Nome VARCHAR(255),
+Marca VARCHAR(30),
+Modelo VARCHAR(30)
+);
+
+CREATE TABLE Exercicios (
+Id INT PRIMARY KEY IDENTITY (1,1),
+Id_Aparelho INT,
+FOREIGN KEY (Id_Aparelho) REFERENCES Aparelhos (Id),
+Qtd_repeticoes INT,
+Descanso INT,
+Descricao VARCHAR(50)
+);
+
+CREATE TABLE Exercicios_Treino (
+Id_Treino INT,
+Id_Exercicio INT,
+FOREIGN KEY (Id_Exercicio) REFERENCES Exercicios (Id),
+FOREIGN KEY (Id_Treino) REFERENCES Treino (Id)
+);
+
+CREATE TABLE Pagamento (
+Id INT PRIMARY KEY IDENTITY (1,1),
+Id_Aluno INT,
+Id_Plano INT,
+FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),
+FOREIGN KEY (Id_Plano) REFERENCES Plano (Id),
+Valor FLOAT,
+Data_Pagamento DATE,
+Metodo_Pagamento VARCHAR(30)
+);
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
