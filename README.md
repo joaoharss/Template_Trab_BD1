@@ -193,6 +193,41 @@ CREATE TABLE Repeticoes (
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+    
+SELECT * 
+FROM Aluno;
+
+SELECT *
+FROM Aparelhos;
+
+SELECT *
+FROM Historico;
+
+SELECT *
+FROM Instrutor;
+
+SELECT *
+FROM Pagamento;
+
+SELECT *
+FROM Pagamento_Plano;
+
+SELECT *
+FROM Pessoa;
+
+SELECT *
+FROM Plano;
+
+SELECT *
+FROM Repeticoes;
+
+SELECT *
+FROM Tipo_Exercicio;
+
+SELECT *
+FROM Treino;
+
+    
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
