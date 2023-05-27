@@ -51,7 +51,7 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://uploaddeimagens.com.br/images/004/484/648/original/TBD_modelo_conceitual.jpg?1685224538)
+![Alt text](https://github.com/joaoharss/Template_Trab_BD1/blob/master/images/modelo%20conceitual.jpg)
     
         
     
