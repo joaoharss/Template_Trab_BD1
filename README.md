@@ -38,7 +38,7 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
     b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     
-![Exemplo de Tabela de dados da Empresa FitLife]([https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom](https://1drv.ms/x/s!Amcxh5JWBlnTidNewisur5fIse0B4g?e=xZKoH1)")
+![Exemplo de Tabela de dados da Empresa FitLife]("[https://1drv.ms/x/s!Amcxh5JWBlnTidNewisur5fIse0B4g?e=xZKoH1]")
     
     
 ### 5.MODELO CONCEITUAL<br>
