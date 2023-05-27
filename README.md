@@ -67,6 +67,7 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
 PESSOA: Tabela que armazena informações das pessoas(clientes e instrutores).
+
 ALUNO: Tabela que indica quais pessoas são alunos e armazena os dados desses alunos.
 INSTRUTOR: Tabela que indica quais pessoas são instrutores e armazena os dados desses instrutores.
 TREINO: Tabela que indica quais repetições de exercícios compõem o treino de cada pessoa.
