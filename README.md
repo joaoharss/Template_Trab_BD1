@@ -97,84 +97,84 @@ CREATE TABLE Pessoa(<br>
 	Cpf VARCHAR (15)<br>
 );
 
-CREATE TABLE Aluno (
-	Id INTEGER PRIMARY KEY IDENTITY (1,1),
-	Id_Pessoa INT,
-	FOREIGN KEY (Id_Pessoa) REFERENCES Pessoa (Id),
-	Data_Matricula DATETIME,
+CREATE TABLE Aluno (<br>
+	Id INTEGER PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Pessoa INT,<br>
+	FOREIGN KEY (Id_Pessoa) REFERENCES Pessoa (Id),<br>
+	Data_Matricula DATETIME,<br>
 );
 
-CREATE TABLE Instrutor (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Id_Pessoa INT,
-	FOREIGN KEY (Id_Pessoa) REFERENCES Pessoa (Id),
-	Horario TIME,
-	Data_Contratacao DATE,
-	Especialidade VARCHAR(30)
+CREATE TABLE Instrutor (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Pessoa INT,<br>
+	FOREIGN KEY (Id_Pessoa) REFERENCES Pessoa (Id),<br>
+	Horario TIME,<br>
+	Data_Contratacao DATE,<br>
+	Especialidade VARCHAR(30)<br>
 );
 
-CREATE TABLE Plano (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Nome VARCHAR (255),
-	Preco FLOAT
+CREATE TABLE Plano (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Nome VARCHAR (255),<br>
+	Preco FLOAT<br>
 );
 
-CREATE TABLE Pagamento (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Id_Aluno INT,
-	Id_Plano INT,
-	FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),
-	FOREIGN KEY (Id_Plano) REFERENCES Plano (Id),
-	Data_Pagamento DATE,
-	Metodo_Pagamento VARCHAR(30)
+CREATE TABLE Pagamento (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Aluno INT,<br>
+	Id_Plano INT,<br>
+	FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),<br>
+	FOREIGN KEY (Id_Plano) REFERENCES Plano (Id),<br>
+	Data_Pagamento DATE,<br>
+	Metodo_Pagamento VARCHAR(30)<br>
 );
 
-CREATE TABLE Pagamento_Plano (
-	Id_Pagamento INT,
-	Id_Plano INT,
-	FOREIGN KEY (Id_Pagamento) REFERENCES Pagamento (Id),
-	FOREIGN KEY (Id_Plano) REFERENCES Plano (Id),
+CREATE TABLE Pagamento_Plano (<br>
+	Id_Pagamento INT,<br>
+	Id_Plano INT,<br>
+	FOREIGN KEY (Id_Pagamento) REFERENCES Pagamento (Id),<br>
+	FOREIGN KEY (Id_Plano) REFERENCES Plano (Id),<br>
 );
 
-CREATE TABLE Historico (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Id_Aluno INT,
-	FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),
-	Altura FLOAT,
-	Historico_Medico VARCHAR(MAX),
-	Peso FLOAT
+CREATE TABLE Historico (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Aluno INT,<br>
+	FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),<br>
+	Altura FLOAT,<br>
+	Historico_Medico VARCHAR(MAX),<br>
+	Peso FLOAT<br>
 );
 
-CREATE TABLE Treino (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Id_Aluno INT,
-	Id_Instrutor INT,
-	FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),
-	FOREIGN KEY (Id_Instrutor) REFERENCES Instrutor (Id)
+CREATE TABLE Treino (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Aluno INT,<br>
+	Id_Instrutor INT,<br>
+	FOREIGN KEY (Id_Aluno) REFERENCES Aluno (Id),<br>
+	FOREIGN KEY (Id_Instrutor) REFERENCES Instrutor (Id)<br>
 );
 
-CREATE TABLE Aparelhos (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Nome VARCHAR(255),
-	Marca VARCHAR(30),
-	Modelo VARCHAR(30)
+CREATE TABLE Aparelhos (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Nome VARCHAR(255),<br>
+	Marca VARCHAR(30),<br>
+	Modelo VARCHAR(30)<br>
 );
 
-CREATE TABLE Tipo_Exercicio (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Id_Aparelho INT,
-	FOREIGN KEY (Id_Aparelho) REFERENCES Aparelhos (Id),
-	Descricao VARCHAR(100)
+CREATE TABLE Tipo_Exercicio (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Aparelho INT,<br>
+	FOREIGN KEY (Id_Aparelho) REFERENCES Aparelhos (Id),<br>
+	Descricao VARCHAR(100)<br>
 );
 
-CREATE TABLE Repeticoes (
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Id_Treino INT,
-	Id_Tipo_Exercicio INT,
-	FOREIGN KEY (Id_Treino) REFERENCES Treino (Id),
-	FOREIGN KEY (Id_Tipo_Exercicio) REFERENCES Tipo_Exercicio (Id),
-	Descanso INT,
-	qtd_repeticoes INT
+CREATE TABLE Repeticoes (<br>
+	Id INT PRIMARY KEY IDENTITY (1,1),<br>
+	Id_Treino INT,<br>
+	Id_Tipo_Exercicio INT,<br>
+	FOREIGN KEY (Id_Treino) REFERENCES Treino (Id),<br>
+	FOREIGN KEY (Id_Tipo_Exercicio) REFERENCES Tipo_Exercicio (Id),<br>
+	Descanso INT,<br>
+	qtd_repeticoes INT<br>
 );
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
