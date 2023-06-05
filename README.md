@@ -188,7 +188,7 @@ CREATE TABLE Repeticoes (<br>
 
 	Segue as informações para criar um banco teste e testar os creates para ver se a restauração está funcionando:
 
-![Instrução para criar o banco](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/backup.sql)
+![Instrução para fazer backup no banco](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/backup.sql)
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
