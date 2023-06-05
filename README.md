@@ -95,6 +95,8 @@ historico_med: campo que armazena o hitorico médico do aluno (doenças ou cirur
 PAGAMENTO: Tabela que armazena os pagamentos realizados pelos alunos.<br>
 metodo: campo que armazena o metodo de pagamento usado.<br>
 PLANO: tabela que armazena as opções de planos disponíveis.<br>
+preco: campo que armazena o preço do plano.<br>
+nome: campo que armazena o nome do palano.<br>
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
