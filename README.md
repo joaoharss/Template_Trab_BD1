@@ -67,12 +67,34 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
 PESSOA: Tabela que armazena informações das pessoas(clientes e instrutores).<br>
+nome: campo que armazena o nome da pessoa.<br>
+telefone: campo que armazena o telefone de contato da pessoa.<br>
+data_nasc: campo que armazena a data de nascimento da pessoa.<br>
+email: campo que armazena o email da pessoa.<br>
+sexo: campo que armazena o sexo da pessoa.<br>
+cpf: campo que armazena o numero de cadastro de pessoa física de cada pessoa.<br>
 ALUNO: Tabela que indica quais pessoas são alunos e armazena os dados desses alunos.<br>
+data_matricula: campo que armazena a data que o aluno se matriculou na academia.<br>
 INSTRUTOR: Tabela que indica quais pessoas são instrutores e armazena os dados desses instrutores.<br>
+horario: campo que armazena o horario de trabalho do instrutor.<br>
+especialidade: campo que armazena a especialidade do instrutor.<br>
+data_contratacao: campo que armazena a data que o instrutor foi contratado pela academia.<br>
 TREINO: Tabela que indica quais repetições de exercícios compõem o treino de cada pessoa.<br>
 REPETIÇÕES: Tabela que armazena quantas repetições e indica qual exercício deve ser feito.<br>
+qtd_repeticao: campo que armazena o numero de repetições do exercicio indicado pela chave estrangeira.<br>
+tempo_descanso: campo que armazena o tempo de descanço entre as repetições.<br>
 TIPO_EXERCICIO: Tabela que armazena os tipos de exercícios que podem ser feitos e quais aparelhos eles usam.<br>
+descricao: campo que armazena a descrição e nome do exercicio.<br>
 APARELHOS: Tabela armazena as informações dos aparelhos presentes na academia.<br>
+modelo: campo que armazena o modelo da maquina.<br>
+marca: campo que armazena a marca da maquina.<br>
+HISTORICO: Tabela que armazena os historicos médicos dos alunos.<br>
+peso: campo que armazena o peso do aluno.<br>
+altura: campo que armazena a altura do aluno.<br>
+historico_med: campo que armazena o hitorico médico do aluno (doenças ou cirurgias).<br>
+PAGAMENTO: Tabela que armazena os pagamentos realizados pelos alunos.<br>
+metodo: campo que armazena o metodo de pagamento usado.<br>
+PLANO: tabela que armazena as opções de planos disponíveis.<br>
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
