@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 João Victor Lopes: lemelting53@gmail.com<br>
 Davi de Souza Breda: davibreda123@gmail.com<br>
-Luiz Guilherme Zottich: guizottich@gmail.com<br>
+Luiz Guilherme de Souza Zottich: guizottich@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 A academia "FitLife" tem como objetivo promover um estilo de vida saudável e bem-estar para seus alunos. Para otimizar a gestão das atividades em várias unidades da academia em todo o país, desenvolvemos o Sistema "FitLife". Ele centraliza as informações dos alunos, instrutores, modalidades de exercícios, etc... Com o Sistema "FitLife", a academia poderá realizar suas operações de forma eficiente, garantindo um acompanhamento completo das informações relevantes para oferecer serviços de qualidade aos alunos.
