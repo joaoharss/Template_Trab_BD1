@@ -20,6 +20,10 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
+![Alt text](https://uploaddeimagens.com.br/images/004/501/508/original/image3.png?1686343572)
+![Alt text](https://uploaddeimagens.com.br/images/004/501/511/original/image2.png?1686343606)
+![Alt text](https://uploaddeimagens.com.br/images/004/501/513/original/image1.png?1686343626)
+
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa FitLife](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/TelasSistemaAcademia%20(1).pdf "Empresa FitLife")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
