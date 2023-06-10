@@ -297,14 +297,46 @@ FROM Treino;
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+
+SELECT * FROM HISTORICO WHERE ALTURA>1.7;<br>
+SELECT * FROM PAGAMENTO WHERE METODO_PAGAMENTO==CARTÃO DE CRÉDITO;<br>
+SELECT * FROM PESSOA WHERE SEXO==M;<br>
+SELECT * FROM PLANO WHERE PRECO>90;<br>
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    
+a)<br>
+SELECT * FROM HISTORICO WHERE ALTURA>1.7 AND PESO>80;<br>
+SELECT * FROM PAGAMENTO WHERE METODO_PAGAMENTO==CARTÃO DE CRÉDITO AND ID_PLANO==2;<br>
+SELECT * FROM REPETICOES WHERE ID_TREINO==4 OR ID_TIPO_EXERCICIO==5;<br>
+SELECT * FROM REPETICOES WHERE ID_TREINO==4 NOT ID_TIPO_EXERCICIO==3;<br>
+SELECT * FROM HISTORICO WHERE ALTURA>1.8 OR PESO>75;<br>
+
+b)<br>
+SELECT NOME,PRECO * 1,5 FROM PLANO AS TESTE_AUMENTO;<br>
+SELECT NOME,PRECO + 10 FROM PLANO AS TESTE_AUMENTO;<br>
+SELECT NOME,PRECO - 30 FROM PLANO AS TESTE_DESCONTO;<br>
+
+c)<br>
+ALTER TABLE ALUNO RENAME TO CLIENTE;<br>
+ALTER TABLE TIPO_EXERCICIO RENAME COLUMN DESCRICAO TO DESCRICAO_NOME;<br>
+ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
+    
+a)<br>
+select preco from plano WHERE nome like'%bro%';<br>
+SELECT * FROM Pagamento WHERE Metodo_Pagamento LIKE '%Cartão%';<br>
+select id_aluno,altura,historico_medico from Historico WHERE historico_medico like'hipertensão%';<br>
+SELECT * FROM Plano WHERE Nome LIKE '%Ouro';<br>
+SELECT * FROM Tipo_Exercicio WHERE Descricao ILIKE '%Pronada%';<br>
+
+b)<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
