@@ -337,6 +337,17 @@ SELECT * FROM Plano WHERE Nome LIKE '%Ouro';<br>
 SELECT * FROM Tipo_Exercicio WHERE Descricao ILIKE '%Pronada%';<br>
 
 b)<br>
+SELECT Nome, age(Data_Nascimento) AS Idade<br>
+FROM Pessoa<br>
+WHERE Sexo = 'M' AND age(Data_Nascimento) >= '30 years';<br>
+
+SELECT Nome, date_part('year', Data_Nascimento) AS Ano_Nascimento<br>
+FROM Pessoa<br>
+WHERE date_part('month', Data_Nascimento) = 5;<br>
+
+SELECT Nome, extract(year from Data_Matricula) AS Ano_Matricula<br>
+FROM Aluno<br>
+WHERE extract(year from Data_Matricula) = 2022;<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
