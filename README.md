@@ -367,7 +367,13 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 5;<br>
     b) Criar minimo 3 de atualização
 a)<br>
 DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
-DELETE FROM Pessoa WHERE Data_Nascimento;<br>
+DELETE FROM Pessoa WHERE Data_Nascimento > '1991-01-01';<br>
+DELETE FROM Plano WHERE Nome = Plano Bronze;<br>
+
+b)<br>
+UPDATE Plano SET Preco = 175 WHERE Nome = 'Plano Família';<br>
+UPDATE Historico SET Historico_Medico = 'Cirurgia no Joelho' WHERE Id_Aluno = 35;<br>
+UPDATE Instrutor SET Horario = '13:00:00.0000000' , Especialidade 'Musculação' WHERE Id_Pessoa = 38;<br>
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
