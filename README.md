@@ -369,18 +369,18 @@ WHERE extract(year from Data_Matricula) = 2022;<br>
 
 SELECT Nome, age(Data_Matricula, Data_Nascimento) AS Idade_Matricula FROM Aluno<br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
-WHERE age(Data_Matricula, Data_Nascimento) >= '18 years';<br>
+WHERE age(Data_Matricula, Data_Nascimento) >= 18;<br>
 ![Alt text](https://uploaddeimagens.com.br/images/004/503/085/original/image9.png?1686525130)<br>
 
 SELECT Nome, date_part('year', age(Data_Matricula, Data_Nascimento)) AS Anos_Diferenca FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 20;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/503/074/original/image1.png?1686524933)<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/075/original/image2.png?1686524953)<br>
 
 SELECT Nome, extract(month from age(Data_Matricula, Data_Nascimento)) AS Meses_Matricula FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE extract(month from age(Data_Matricula, Data_Nascimento)) >= 12;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/503/075/original/image2.png?1686524953)<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/074/original/image1.png?1686524933)<br>
 
 SELECT Nome, date_part('year', age(Data_Matricula, Data_Nascimento)) AS Anos_Diferenca FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
