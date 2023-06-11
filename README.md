@@ -326,19 +326,17 @@ SELECT * FROM Historico WHERE ALTURA>1.8 OR PESO>75;<br>
 
 b)<br>
 SELECT NOME,PRECO * 1,5 FROM PLANO AS TESTE_AUMENTO;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/965/original/image3.png?1686517532)<br>
 SELECT NOME,PRECO + 10 FROM PLANO AS TESTE_AUMENTO;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/973/original/image9.png?1686517657)<br>
 SELECT NOME,PRECO - 30 FROM PLANO AS TESTE_DESCONTO;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/964/original/image2.png?1686517519)<br>
 
 c)<br>
 ALTER TABLE ALUNO RENAME TO CLIENTE;<br>
-![Alt text]()<br>
 ALTER TABLE TIPO_EXERCICIO RENAME COLUMN DESCRICAO TO DESCRICAO_NOME;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/970/original/image7.png?1686517603)<br>
 ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
-![Alt text]()<br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
