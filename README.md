@@ -451,6 +451,10 @@ SELECT Nome, DATEDIFF(YEAR, data_nascimento, GETDATE()) AS idade FROM Pessoa p
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
+     
+SELECT I.Id as Id_Instrutor, T.Id as Id_Treino,
+    (SELECT COUNT(*) FROM Aluno A WHERE A.Id = T.Id_Aluno AND T.Id_Instrutor = I.Id) AS Total_Alunos
+FROM Instrutor I, Treino T;
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
