@@ -396,6 +396,34 @@ RIGHT JOIN Aparelhos on Aparelhos.Nome like '%barra%'
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+	
+CREATE VIEW clientes_credito AS
+SELECT * FROM Pagamento as P
+WHERE P.Metodo_Pagamento = 'Cartão de crédito';
+
+CREATE VIEW pessoas_alunos AS
+SELECT a.Id AS aluno_origem, p.Nome AS pessoa_origem
+FROM Aluno AS a
+JOIN Pessoa p ON a.Id = p.Id
+
+CREATE VIEW treino_aluno AS
+SELECT a.Id AS aluno_origem, p.Nome AS pessoa_origem, te.Descricao AS descricao_do_exercicio, ap.Nome AS nome_aparelho
+FROM Aluno AS a
+INNER JOIN Pessoa p ON a.Id = p.Id 
+INNER JOIN Treino T ON t.Id_Aluno = a.Id
+INNER JOIN Repeticoes R ON R.Id_Treino = T.Id
+INNER JOIN Tipo_Exercicio te ON R.Id_Tipo_Exercicio = te.Id
+INNER JOIN Aparelhos ap ON te.Id_Aparelho = ap.Id
+
+CREATE VIEW identifica_problemas_medicos AS
+SELECT * FROM HISTORICO WHERE Historico_Medico <> 'Nenhum histórico médico';
+
+CREATE VIEW identifica_sobrepeso AS
+SELECT * FROM Historico h
+WHERE h.Peso / (h.Altura * h.Altura) > 25
+
+CREATE VIEW idade AS 
+SELECT Nome, DATEDIFF(YEAR, data_nascimento, GETDATE()) AS idade FROM Pessoa p
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
