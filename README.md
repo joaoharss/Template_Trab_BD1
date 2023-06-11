@@ -344,35 +344,48 @@ ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
     
 a)<br>
 select preco from plano WHERE nome like'%bro%';<br>
+![Alt text]()<br>
 SELECT * FROM Pagamento WHERE Metodo_Pagamento LIKE '%Cartão%';<br>
+![Alt text]()<br>
 select id_aluno,altura,historico_medico from Historico WHERE historico_medico like'hipertensão%';<br>
+![Alt text]()<br>
 SELECT * FROM Plano WHERE Nome LIKE '%Ouro';<br>
+![Alt text]()<br>
 SELECT * FROM Tipo_Exercicio WHERE Descricao ILIKE '%Pronada%';<br>
+![Alt text]()<br>
 
 b)<br>
 SELECT Nome, age(Data_Nascimento) AS Idade FROM Pessoa<br>
 WHERE Sexo = 'M' AND age(Data_Nascimento) >= '30 years';<br>
+![Alt text]()<br>
 
 SELECT Nome, date_part('year', Data_Nascimento) AS Ano_Nascimento FROM Pessoa<br>
 WHERE date_part('month', Data_Nascimento) = 5;<br>
+![Alt text]()<br>
 
 SELECT Nome, extract(year from Data_Matricula) AS Ano_Matricula FROM Aluno<br>
 WHERE extract(year from Data_Matricula) = 2022;<br>
+![Alt text]()<br>
 
 SELECT Nome, age(Data_Matricula, Data_Nascimento) AS Idade_Matricula FROM Aluno<br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE age(Data_Matricula, Data_Nascimento) >= '18 years';<br>
+![Alt text]()<br>
 
-SELECT Nome, date_part('dow', Data_Matricula) AS Dia_Semana_Matricula FROM Aluno<br>
-WHERE date_part('dow', Data_Matricula) IN (0, 6);<br>
+SELECT Nome, date_part('year', age(Data_Matricula, Data_Nascimento)) AS Anos_Diferenca FROM Aluno <br>
+INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
+WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 20;<br>
+![Alt text]()<br>
 
 SELECT Nome, extract(month from age(Data_Matricula, Data_Nascimento)) AS Meses_Matricula FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE extract(month from age(Data_Matricula, Data_Nascimento)) >= 12;<br>
+![Alt text]()<br>
 
 SELECT Nome, date_part('year', age(Data_Matricula, Data_Nascimento)) AS Anos_Diferenca FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
-WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 5;<br>
+WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 30;<br>
+![Alt text]()<br>
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
