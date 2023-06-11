@@ -344,15 +344,15 @@ ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
     
 a)<br>
 select preco from plano WHERE nome like'%bro%';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/076/original/image3.png?1686524972)<br>
 SELECT * FROM Pagamento WHERE Metodo_Pagamento LIKE '%Cartão%';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/088/original/image12.png?1686525180)<br>
 select id_aluno,altura,historico_medico from Historico WHERE historico_medico like'hipertensão%';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/081/original/image7.png?1686525072)<br>
 SELECT * FROM Plano WHERE Nome LIKE '%Ouro';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/077/original/image4.png?1686524983)<br>
 SELECT * FROM Tipo_Exercicio WHERE Descricao ILIKE '%Pronada%';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/079/original/image5.png?1686525034)<br>
 
 b)<br>
 SELECT Nome, age(Data_Nascimento) AS Idade FROM Pessoa<br>
