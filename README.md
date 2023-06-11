@@ -365,6 +365,9 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 5;<br>
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
+a)<br>
+DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
+DELETE FROM (tabela) WHERE (condição);<br>
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
