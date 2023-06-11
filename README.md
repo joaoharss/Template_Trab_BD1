@@ -313,16 +313,16 @@ SELECT * FROM Plano WHERE PRECO>90;<br>
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
     
 a)<br>
-SELECT * FROM Historico WHERE ALTURA>1.7 AND PESO>80;<br>
-![Alt text]()<br>
+SELECT * FROM Historico WHERE ALTURA>1.7 AND PESO>60;<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/975/original/image11.png?1686517685)<br>
 SELECT * FROM Pagamento WHERE METODO_PAGAMENTO=="Dinheiro" AND ID_PLANO==11;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/962/original/image1.png?1686517490)<br>
 SELECT * FROM Historico WHERE Altura==1.70 OR peso==80;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/969/original/image6.png?1686517580)<br>
 SELECT * FROM Historico WHERE Altura==1.80 NOT peso==80;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/972/original/image8.png?1686517637)<br>
 SELECT * FROM Historico WHERE ALTURA>1.8 OR PESO>75;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/502/977/original/image13.png?1686517715)<br>
 
 b)<br>
 SELECT NOME,PRECO * 1,5 FROM PLANO AS TESTE_AUMENTO;<br>
