@@ -393,22 +393,42 @@ UPDATE Instrutor SET Horario = '13:00:00.0000000' , Especialidade 'Musculação'
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 
-SELECT Tipo_Exercicio.Descricao, Aparelhos.Nome as Nome_Aparelho FROM Tipo_Exercicio
-INNER JOIN Aparelhos ON Tipo_Exercicio.Id_Aparelho = Aparelhos.Id
-ORDER BY Aparelhos.Nome;
+SELECT Tipo_Exercicio.Descricao, Aparelhos.Nome as Nome_Aparelho FROM Tipo_Exercicio<br>
+INNER JOIN Aparelhos ON Tipo_Exercicio.Id_Aparelho = Aparelhos.Id<br>
+ORDER BY Aparelhos.Nome;<br>
 
-SELECT Pessoa.Nome as Nome_Aluno, Aluno.Data_Matricula, Pagamento.Data_Pagamento, Plano.Nome AS NomePlano FROM Pessoa
-INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id
-INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id
-INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano
-ORDER BY Pessoa.Nome;
+SELECT Pessoa.Nome as Nome_Aluno, Aluno.Data_Matricula, Pagamento.Data_Pagamento, Plano.Nome AS NomePlano FROM Pessoa<br>
+INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id<br>
+INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id<br>
+INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano<br>
+ORDER BY Pessoa.Nome;<br>
 
-SELECT Pessoa.Nome, Aluno.Data_Matricula, Treino.Id,  Repeticoes.Descanso, Repeticoes.qtd_repeticoes as Repeticoes, Tipo_Exercicio.Descricao FROM Pessoa
-INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id
-INNER JOIN Treino ON Treino.Id_Aluno = Aluno.Id
-INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id
-INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio
-ORDER BY Pessoa.Nome;
+SELECT Pessoa.Nome, Aluno.Data_Matricula, Treino.Id,  Repeticoes.Descanso, Repeticoes.qtd_repeticoes as Repeticoes, Tipo_Exercicio.Descricao FROM Pessoa<br>
+INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id<br>
+INNER JOIN Treino ON Treino.Id_Aluno = Aluno.Id<br>
+INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id<br>
+INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio<br>
+ORDER BY Pessoa.Nome;<br>
+
+SELECT Instrutor.Id, Instrutor.Id_Pessoa, Pessoa.Nome as Nome_Instrutor, Instrutor.Especialidade, Treino.Id AS Treino_Id FROM Instrutor<br>
+INNER JOIN Pessoa ON Instrutor.Id_Pessoa = Pessoa.Id<br>
+INNER JOIN Treino ON Treino.Id_Instrutor = Instrutor.Id<br>
+INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id<br>
+INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio<br>
+ORDER BY Pessoa.Nome;<br>
+
+SELECT Pessoa.Nome as Nome_Aluno, Aluno.Data_Matricula, Pagamento.Data_Pagamento, Plano.Nome AS NomePlano FROM Pessoa<br>
+INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id<br>
+INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id<br>
+INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano<br>
+ORDER BY Pessoa.Nome;<br>
+
+SELECT Aluno.Id_Pessoa as ID_PessoaAluno, Aluno.Id as ID_Aluno,  Pessoa.Nome AS NomeAluno, Treino.Id AS ID_Treino, Instrutor.Id AS ID_Instrutor, Instrutor.Id_Pessoa AS ID_PessoaInstrutor, Instrutor.Especialidade FROM Aluno<br>
+INNER JOIN Pessoa ON Aluno.Id_Pessoa = Pessoa.Id<br>
+INNER JOIN Treino ON Treino.Id_Aluno = Aluno.Id<br>
+INNER JOIN Instrutor ON Treino.Id_Instrutor = Instrutor.Id<br>
+ORDER BY Pessoa.Nome;<br>
+
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
