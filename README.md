@@ -345,7 +345,7 @@ ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
 a)<br>
 select preco from plano WHERE nome like'%bro%';<br>
 ![Alt text](https://uploaddeimagens.com.br/images/004/503/076/original/image3.png?1686524972)<br>
-SELECT * FROM Pagamento WHERE Metodo_Pagamento LIKE '%Cartão%';<br>
+SELECT * FROM Pagamento WHERE Metodo_Pagamento LIKE '%Dinheiro%';<br>
 ![Alt text](https://uploaddeimagens.com.br/images/004/503/088/original/image12.png?1686525180)<br>
 select id_aluno,altura,historico_medico from Historico WHERE historico_medico like'hipertensão%';<br>
 ![Alt text](https://uploaddeimagens.com.br/images/004/503/081/original/image7.png?1686525072)<br>
@@ -357,35 +357,35 @@ SELECT * FROM Tipo_Exercicio WHERE Descricao ILIKE '%Pronada%';<br>
 b)<br>
 SELECT Nome, age(Data_Nascimento) AS Idade FROM Pessoa<br>
 WHERE Sexo = 'M' AND age(Data_Nascimento) >= '30 years';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/086/original/image10.png?1686525149)<br>
 
 SELECT Nome, date_part('year', Data_Nascimento) AS Ano_Nascimento FROM Pessoa<br>
 WHERE date_part('month', Data_Nascimento) = 5;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/084/original/image8.png?1686525111)<br>
 
 SELECT Nome, extract(year from Data_Matricula) AS Ano_Matricula FROM Aluno<br>
 WHERE extract(year from Data_Matricula) = 2022;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/080/original/image6.png?1686525055)<br>
 
 SELECT Nome, age(Data_Matricula, Data_Nascimento) AS Idade_Matricula FROM Aluno<br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE age(Data_Matricula, Data_Nascimento) >= '18 years';<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/085/original/image9.png?1686525130)<br>
 
 SELECT Nome, date_part('year', age(Data_Matricula, Data_Nascimento)) AS Anos_Diferenca FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 20;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/074/original/image1.png?1686524933)<br>
 
 SELECT Nome, extract(month from age(Data_Matricula, Data_Nascimento)) AS Meses_Matricula FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE extract(month from age(Data_Matricula, Data_Nascimento)) >= 12;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/075/original/image2.png?1686524953)<br>
 
 SELECT Nome, date_part('year', age(Data_Matricula, Data_Nascimento)) AS Anos_Diferenca FROM Aluno <br>
 INNER JOIN Pessoa p ON a.Id_Pessoa = p.Id_Pessoa<br>
 WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 30;<br>
-![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/503/087/original/image11.png?1686525168)<br>
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
