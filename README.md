@@ -378,6 +378,7 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 5;<br>
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
+
 a)<br>
 DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
 DELETE FROM Pessoa WHERE Data_Nascimento > '1991-01-01';<br>
@@ -391,6 +392,23 @@ UPDATE Instrutor SET Horario = '13:00:00.0000000' , Especialidade 'Musculação'
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+
+SELECT Tipo_Exercicio.Descricao, Aparelhos.Nome as Nome_Aparelho FROM Tipo_Exercicio
+INNER JOIN Aparelhos ON Tipo_Exercicio.Id_Aparelho = Aparelhos.Id
+ORDER BY Aparelhos.Nome;
+
+SELECT Pessoa.Nome as Nome_Aluno, Aluno.Data_Matricula, Pagamento.Data_Pagamento, Plano.Nome AS NomePlano FROM Pessoa
+INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id
+INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id
+INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano
+ORDER BY Pessoa.Nome;
+
+SELECT Pessoa.Nome, Aluno.Data_Matricula, Treino.Id,  Repeticoes.Descanso, Repeticoes.qtd_repeticoes as Repeticoes, Tipo_Exercicio.Descricao FROM Pessoa
+INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id
+INNER JOIN Treino ON Treino.Id_Aluno = Aluno.Id
+INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id
+INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio
+ORDER BY Pessoa.Nome;
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
