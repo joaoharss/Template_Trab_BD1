@@ -411,8 +411,9 @@ SELECT * FROM Historico h
 LEFT JOIN Aluno ON h.Peso = 55.2
 
 
-SELECT * FROM Tipo_Exercicio
-RIGHT JOIN Aparelhos on Aparelhos.Nome like '%barra%'
+SELECT * 
+FROM Pessoa
+FULL OUTER JOIN Aluno on Pessoa.Id = Aluno.Id_Pessoa
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
