@@ -299,13 +299,13 @@ FROM Treino;
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 
 SELECT * FROM Historico WHERE ALTURA>1.7;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/502/974/original/image10.png?1686517672)
+![Alt text](https://uploaddeimagens.com.br/images/004/502/974/original/image10.png?1686517672)<br>
 SELECT * FROM Plano WHERE preco==50;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/502/976/original/image12.png?1686517699)
+![Alt text](https://uploaddeimagens.com.br/images/004/502/976/original/image12.png?1686517699)<br>
 SELECT * FROM Pessoa WHERE SEXO==M;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/502/967/original/image5.png?1686517562)
+![Alt text](https://uploaddeimagens.com.br/images/004/502/967/original/image5.png?1686517562)<br>
 SELECT * FROM Plano WHERE PRECO>90;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/502/966/original/image4.png?1686517547)
+![Alt text](https://uploaddeimagens.com.br/images/004/502/966/original/image4.png?1686517547)<br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
