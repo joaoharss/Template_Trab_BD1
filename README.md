@@ -299,9 +299,13 @@ FROM Treino;
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 
 SELECT * FROM Historico WHERE ALTURA>1.7;<br>
+![Alt text]()
 SELECT * FROM Plano WHERE preco==50;<br>
+![Alt text]()
 SELECT * FROM Pessoa WHERE SEXO==M;<br>
+![Alt text]()
 SELECT * FROM Plano WHERE PRECO>90;<br>
+![Alt text]()
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
@@ -310,20 +314,31 @@ SELECT * FROM Plano WHERE PRECO>90;<br>
     
 a)<br>
 SELECT * FROM Historico WHERE ALTURA>1.7 AND PESO>80;<br>
+![Alt text]()
 SELECT * FROM Pagamento WHERE METODO_PAGAMENTO=="Dinheiro" AND ID_PLANO==11;<br>
+![Alt text]()
 SELECT * FROM Historico WHERE Altura==1.70 OR peso==80;<br>
+![Alt text]()
 SELECT * FROM Historico WHERE Altura==1.80 NOT peso==80;<br>
+![Alt text]()
 SELECT * FROM Historico WHERE ALTURA>1.8 OR PESO>75;<br>
+![Alt text]()
 
 b)<br>
 SELECT NOME,PRECO * 1,5 FROM PLANO AS TESTE_AUMENTO;<br>
+![Alt text]()
 SELECT NOME,PRECO + 10 FROM PLANO AS TESTE_AUMENTO;<br>
+![Alt text]()
 SELECT NOME,PRECO - 30 FROM PLANO AS TESTE_DESCONTO;<br>
+![Alt text]()
 
 c)<br>
 ALTER TABLE ALUNO RENAME TO CLIENTE;<br>
+![Alt text]()
 ALTER TABLE TIPO_EXERCICIO RENAME COLUMN DESCRICAO TO DESCRICAO_NOME;<br>
+![Alt text]()
 ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
+![Alt text]()
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
