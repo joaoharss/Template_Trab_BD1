@@ -367,7 +367,7 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 5;<br>
     b) Criar minimo 3 de atualização
 a)<br>
 DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
-DELETE FROM (tabela) WHERE (condição);<br>
+DELETE FROM Pessoa WHERE Data_Nascimento;<br>
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
