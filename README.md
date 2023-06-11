@@ -375,6 +375,23 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 5;<br>
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
+    
+SELECT * FROM Treino
+INNER JOIN Instrutor ON Instrutor.Id = Treino.Id_Instrutor
+WHERE Treino.Id_Instrutor = 15
+
+SELECT * FROM Pagamento p
+INNER JOIN Aluno ON Aluno.Id = p.Id_Aluno
+INNER JOIN Pagamento_Plano pp ON pp.Id_Pagamento = p.Id
+RIGHT JOIN Plano pl ON pl.Nome like '%ouro'
+
+SELECT * FROM Historico h
+LEFT JOIN Aluno ON h.Peso = 55.2
+
+
+SELECT * FROM Tipo_Exercicio
+RIGHT JOIN Aparelhos on Aparelhos.Nome like '%barra%'
+
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
