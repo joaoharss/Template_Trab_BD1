@@ -445,6 +445,9 @@ ORDER BY Pessoa.Nome;<br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
+INNER
+SELECT Aparelhos.Nome as Nome_Aparelho, COUNT(**) as treinos FROM Treino
+INNER
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
