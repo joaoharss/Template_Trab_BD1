@@ -445,9 +445,25 @@ ORDER BY Pessoa.Nome;<br>
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
-INNER
-SELECT Aparelhos.Nome as Nome_Aparelho, COUNT(**) as treinos FROM Treino
-INNER
+
+SELECT Aparelhos.Nome as Nome_Aparelho, COUNT(*) as treinos FROM Treino
+INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id
+INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio
+INNER JOIN Aparelhos ON Aparelhos.Id = Tipo_Exercicio.Id_Aparelho
+GROUP BY Aparelhos.Nome;
+
+SELECT Plano.Nome AS TipoPlano, COUNT(*) AS TotalAlunos FROM Aluno
+INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id
+INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano
+GROUP BY Plano.Nome;
+
+SELECT count (*) as numero_instrutores from Instrutor;
+
+SELECT AVG(Preco) as preco_medio, MAX(Preco) as preco_maximo from Plano;
+
+SELECT count(*) as numero_alunos from Aluno;
+
+SELECT AVG(Peso) as media_peso, AVG (Altura) as media_altura From Historico;
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
