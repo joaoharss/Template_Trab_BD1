@@ -393,6 +393,8 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 30;<br>
     b) Criar minimo 3 de atualização
 
 a)<br>
+![Alt text]()<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/508/160/original/imagem_2023-06-15_124148684.png?1686843736)<br>
 DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
 DELETE FROM Pessoa WHERE Data_Nascimento > '1991-01-01';<br>
 DELETE FROM Plano WHERE Nome = Plano Bronze;<br>
