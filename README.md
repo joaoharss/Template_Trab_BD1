@@ -421,12 +421,14 @@ UPDATE Instrutor SET Horario = '13:00:00.0000000' , Especialidade = 'Musculaçã
 SELECT Tipo_Exercicio.Descricao, Aparelhos.Nome as Nome_Aparelho FROM Tipo_Exercicio<br>
 INNER JOIN Aparelhos ON Tipo_Exercicio.Id_Aparelho = Aparelhos.Id<br>
 ORDER BY Aparelhos.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/14691779-ae59-4a1a-af93-cd5445b6fcb4)<br>
 
 SELECT Pessoa.Nome as Nome_Aluno, Aluno.Data_Matricula, Pagamento.Data_Pagamento, Plano.Nome AS NomePlano FROM Pessoa<br>
 INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id<br>
 INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id<br>
 INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano<br>
 ORDER BY Pessoa.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/9b1933d9-d0d6-44ec-b1e9-fc3367d16092)<br>
 
 SELECT Pessoa.Nome, Aluno.Data_Matricula, Treino.Id,  Repeticoes.Descanso, Repeticoes.qtd_repeticoes as Repeticoes, Tipo_Exercicio.Descricao FROM Pessoa<br>
 INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id<br>
@@ -434,6 +436,7 @@ INNER JOIN Treino ON Treino.Id_Aluno = Aluno.Id<br>
 INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id<br>
 INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio<br>
 ORDER BY Pessoa.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/e9df0f36-a5b8-4995-9960-bf2d29de62db)<br>
 
 SELECT Instrutor.Id, Instrutor.Id_Pessoa, Pessoa.Nome as Nome_Instrutor, Instrutor.Especialidade, Treino.Id AS Treino_Id FROM Instrutor<br>
 INNER JOIN Pessoa ON Instrutor.Id_Pessoa = Pessoa.Id<br>
@@ -441,18 +444,21 @@ INNER JOIN Treino ON Treino.Id_Instrutor = Instrutor.Id<br>
 INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id<br>
 INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio<br>
 ORDER BY Pessoa.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/d824ce56-b07f-422a-8c94-c2bc870c3ced)<br>
 
 SELECT Pessoa.Nome as Nome_Aluno, Aluno.Data_Matricula, Pagamento.Data_Pagamento, Plano.Nome AS NomePlano FROM Pessoa<br>
 INNER JOIN Aluno ON Aluno.Id_Pessoa = Pessoa.Id<br>
 INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id<br>
 INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano<br>
 ORDER BY Pessoa.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/f38e2aaa-18f2-4c0a-8f5e-761146b46937)<br>
 
 SELECT Aluno.Id_Pessoa as ID_PessoaAluno, Aluno.Id as ID_Aluno,  Pessoa.Nome AS NomeAluno, Treino.Id AS ID_Treino, Instrutor.Id AS ID_Instrutor, Instrutor.Id_Pessoa AS ID_PessoaInstrutor, Instrutor.Especialidade FROM Aluno<br>
 INNER JOIN Pessoa ON Aluno.Id_Pessoa = Pessoa.Id<br>
 INNER JOIN Treino ON Treino.Id_Aluno = Aluno.Id<br>
 INNER JOIN Instrutor ON Treino.Id_Instrutor = Instrutor.Id<br>
 ORDER BY Pessoa.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/d7653e53-400b-476f-8921-e2a97a9d0960)<br>
 
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
@@ -463,19 +469,26 @@ INNER JOIN Repeticoes ON Repeticoes.Id_Treino = Treino.Id<br>
 INNER JOIN Tipo_Exercicio ON Tipo_Exercicio.Id = Repeticoes.Id_Tipo_Exercicio<br>
 INNER JOIN Aparelhos ON Aparelhos.Id = Tipo_Exercicio.Id_Aparelho<br>
 GROUP BY Aparelhos.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/371f2b59-b893-4847-ab5d-f4951c7f094e)<br>
 
 SELECT Plano.Nome AS TipoPlano, COUNT(*) AS TotalAlunos FROM Aluno<br>
 INNER JOIN Pagamento ON Pagamento.Id_Aluno = Aluno.Id<br>
 INNER JOIN Plano ON Plano.Id = Pagamento.Id_Plano<br>
 GROUP BY Plano.Nome;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/6efd417d-8ef2-4b29-8d2f-79e69451a0f3)<br>
 
 SELECT count (*) as numero_instrutores from Instrutor;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/a86f8e49-216e-4dcc-b753-547cfc2ce45a)<br>
 
 SELECT AVG(Preco) as preco_medio, MAX(Preco) as preco_maximo from Plano;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/61e8f008-63b0-4c06-a353-9f4962e824ed)<br>
 
 SELECT count(*) as numero_alunos from Aluno;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/72ac011d-4d50-42e5-b945-81be8c755643)<br>
 
 SELECT AVG(Peso) as media_peso, AVG (Altura) as media_altura From Historico;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/a4ee0667-bd96-4089-9a01-c360d920805c)<br>
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
