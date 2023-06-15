@@ -393,17 +393,26 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 30;<br>
     b) Criar minimo 3 de atualização
 
 a)<br>
-![Alt text]()<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/508/163/original/imagem_2023-06-15_125129068.png?1686844314)<br>
-DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
-![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/ff3409ba-d55d-4d99-bde7-581bd1cc9ba4)
-DELETE FROM Pessoa WHERE Data_Nascimento > '1991-01-01';<br>
-DELETE FROM Plano WHERE Nome = Plano Bronze;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/445bd36b-7072-421f-aea3-be260ace4e3e)<br>
+DELETE FROM Tipo_Exercicio WHERE Descricao = 'Triceps';<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/90c5c90b-8246-4b45-bbc4-a7761de88efa)<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/8156b384-684c-4537-999d-b4008f74bd78)<br>
+DELETE FROM Pessoa WHERE Data_Nascimento < '1960-05-16';<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/4689d14a-5c50-4623-81e0-f75d1b8652c0)<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/e7a6ebff-641e-48d8-b99a-c25a1315b5b8)<br>
+DELETE FROM Plano WHERE Nome = 'Plano promocional';<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/fd967f12-c023-4b90-9b81-a3f516ce6a93)<br>
 
 b)<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/db047e32-e5d8-4c05-9508-6d1b76007a87)<br>
 UPDATE Plano SET Preco = 175 WHERE Nome = 'Plano Família';<br>
-UPDATE Historico SET Historico_Medico = 'Cirurgia no Joelho' WHERE Id_Aluno = 35;<br>
-UPDATE Instrutor SET Horario = '13:00:00.0000000' , Especialidade 'Musculação' WHERE Id_Pessoa = 38;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/1aae7130-7aae-4caf-9e4d-1de90974e094)<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/f9f1d242-aa40-4a87-a8a5-9773d1713027)<br>
+UPDATE Historico SET Historico_Medico = 'Cirurgia no Joelho' WHERE Id_Aluno = 3;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/b1f7ef79-1abf-45f8-8f7b-cc6095e24d9e)<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/874957e4-a6d3-4fb8-86ee-a32ebdd71f7e)<br>
+UPDATE Instrutor SET Horario = '13:00:00.0000000' , Especialidade = 'Musculação' WHERE Id_Pessoa = 13;<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/f5c78f9a-7414-442c-b4e2-a643ee3a2899)<br>
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
