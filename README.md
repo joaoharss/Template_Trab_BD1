@@ -394,8 +394,9 @@ WHERE date_part('year', age(Data_Matricula, Data_Nascimento)) >= 30;<br>
 
 a)<br>
 ![Alt text]()<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/508/160/original/imagem_2023-06-15_124148684.png?1686843736)<br>
+![Alt text](https://uploaddeimagens.com.br/images/004/508/163/original/imagem_2023-06-15_125129068.png?1686844314)<br>
 DELETE FROM Tipo_Exercicio WHERE Descrição = 'Corrida leve';<br>
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/96080706/ff3409ba-d55d-4d99-bde7-581bd1cc9ba4)
 DELETE FROM Pessoa WHERE Data_Nascimento > '1991-01-01';<br>
 DELETE FROM Plano WHERE Nome = Plano Bronze;<br>
 
