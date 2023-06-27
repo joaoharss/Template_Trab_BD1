@@ -34,7 +34,7 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
 * Relatório de quantidade de aluno para cada modalidade.
 * Relatório de porcentagem de quantos alunos possuem histórico médico e quantos não possuem .
 * Relatório de números de exercício mais utilizados.
-* Relatório da taxa de idade dos alunos.
+* Relatório da faixa de idade dos alunos.
 
  
  
