@@ -333,10 +333,12 @@ SELECT NOME,PRECO - 30 FROM PLANO AS TESTE_DESCONTO;<br>
 ![Alt text](https://uploaddeimagens.com.br/images/004/502/964/original/image2.png?1686517519)<br>
 
 c)<br>
-ALTER TABLE ALUNO RENAME TO CLIENTE;<br>
-ALTER TABLE TIPO_EXERCICIO RENAME COLUMN DESCRICAO TO DESCRICAO_NOME;<br>
-![Alt text](https://uploaddeimagens.com.br/images/004/502/970/original/image7.png?1686517603)<br>
-ALTER TABLE HISTORICO RENAME TO HISTORICO_ALUNO;<br>
+select id_aluno, peso, historico_medico AS condicao_de_saúde from Historico WHERE peso<70;<br>
+![Alt text](https://github.com/LuizZottich/Images/blob/main/images/image1.png)<br>
+SELECT nome, telefone AS numero_celular from Pessoa;<br>
+![Alt text](https://github.com/LuizZottich/Images/blob/main/images/image2.png)<br>
+select id_aluno, data_pagamento AS data_efetivacao_pagamento from Pagamento;<br>
+![Alt text](https://github.com/LuizZottich/Images/blob/main/images/image3.png)<br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
