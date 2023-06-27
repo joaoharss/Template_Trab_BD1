@@ -30,11 +30,11 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 > A Empresa "FitLife" precisa inicialmente dos seguintes relatórios:
-* Relatório de cada instrutor e quantos alunos estão ligados a ele.
-* Relatório do aluno e qual tipo de plano ele está utilizando.
-* Relatório do treino do aluno.
-* Relatório do faturamento total da academia.
-* Relatório de qual é o plano mais utilizado na academia.
+* Relatório de plano mais utilizado.
+* Relatório de quantidade de aluno para cada modalidade.
+* Relatório de porcentagem de quantos alunos possuem histórico médico e quantos não possuem .
+* Relatório de números de exercício mais utilizados.
+* Relatório da taxa de idade dos alunos.
 
  
  
