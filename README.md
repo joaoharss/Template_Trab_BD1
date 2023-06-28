@@ -27,7 +27,8 @@ Num determinado sistema de administração de academia desenvolvido para auxilia
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa FitLife](https://github.com/joaoharss/Template_Trab_BD1/blob/master/arquivos/TelasSistemaAcademia%20(1).pdf "Empresa FitLife")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
+    b) Quais relatórios o sistema será capaz de fornecer?
+    c) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 > A Empresa "FitLife" precisa inicialmente dos seguintes relatórios:
 * Relatório de plano mais utilizado.
@@ -498,19 +499,24 @@ SELECT AVG(Peso) as media_peso, AVG (Altura) as media_altura From Historico;<br>
 SELECT * FROM Treino
 INNER JOIN Instrutor ON Instrutor.Id = Treino.Id_Instrutor
 WHERE Treino.Id_Instrutor = 15
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/8e325238-fff4-4838-b62b-ada1921d5f01)
 
 SELECT * FROM Pagamento p
 INNER JOIN Aluno ON Aluno.Id = p.Id_Aluno
 INNER JOIN Pagamento_Plano pp ON pp.Id_Pagamento = p.Id
 RIGHT JOIN Plano pl ON pl.Nome like '%ouro'
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/f9532b61-9432-4f0e-94bb-06f0301e1fcb)
+
 
 SELECT * FROM Historico h
 LEFT JOIN Aluno ON h.Peso = 55.2
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/c0500dd7-6355-4660-b7b5-9591e0f07cab)
 
 
 SELECT * 
 FROM Pessoa
 FULL OUTER JOIN Aluno on Pessoa.Id = Aluno.Id_Pessoa
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/29e3ff44-d61d-4326-b240-f9e2664b0183)
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
@@ -520,11 +526,15 @@ FULL OUTER JOIN Aluno on Pessoa.Id = Aluno.Id_Pessoa
 CREATE VIEW clientes_credito AS
 SELECT * FROM Pagamento as P
 WHERE P.Metodo_Pagamento = 'Cartão de crédito';
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/24cc0513-50ec-4a65-9ea7-42233218df62)
+
 
 CREATE VIEW pessoas_alunos AS
 SELECT a.Id AS aluno_origem, p.Nome AS pessoa_origem
 FROM Aluno AS a
 JOIN Pessoa p ON a.Id = p.Id
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/95a5064b-4ff6-4d74-aafc-770b8ffa802c)
+
 
 CREATE VIEW treino_aluno AS
 SELECT a.Id AS aluno_origem, p.Nome AS pessoa_origem, te.Descricao AS descricao_do_exercicio, ap.Nome AS nome_aparelho
@@ -534,16 +544,23 @@ INNER JOIN Treino T ON t.Id_Aluno = a.Id
 INNER JOIN Repeticoes R ON R.Id_Treino = T.Id
 INNER JOIN Tipo_Exercicio te ON R.Id_Tipo_Exercicio = te.Id
 INNER JOIN Aparelhos ap ON te.Id_Aparelho = ap.Id
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/8bd83d74-cec4-41f0-8d32-03fc4a98d9e3)
+
 
 CREATE VIEW identifica_problemas_medicos AS
 SELECT * FROM HISTORICO WHERE Historico_Medico <> 'Nenhum histórico médico';
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/20e1257e-a32c-477e-9341-c48c6cf6f762)
+
 
 CREATE VIEW identifica_sobrepeso AS
 SELECT * FROM Historico h
-WHERE h.Peso / (h.Altura * h.Altura) > 25
+WHERE h.Peso / (h.Altura * h.Altura) > 20
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/583ba96f-ece8-4d14-9b3a-484790ec88fd)
+
 
 CREATE VIEW idade AS 
 SELECT Nome, DATEDIFF(YEAR, data_nascimento, GETDATE()) AS idade FROM Pessoa p
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/48327790-8248-4f58-8e17-914e731dff92)
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
@@ -552,6 +569,8 @@ SELECT Nome, DATEDIFF(YEAR, data_nascimento, GETDATE()) AS idade FROM Pessoa p
 SELECT I.Id as Id_Instrutor, T.Id as Id_Treino,
     (SELECT COUNT(*) FROM Aluno A WHERE A.Id = T.Id_Aluno AND T.Id_Instrutor = I.Id) AS Total_Alunos
 FROM Instrutor I, Treino T;
+![image](https://github.com/joaoharss/Template_Trab_BD1/assets/72459654/f88c0cce-1110-4df0-912d-7c101338966c)
+
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
