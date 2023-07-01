@@ -587,6 +587,8 @@ FROM Instrutor I, Treino T;
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
 
+apresentação: [Video de apresentação](https://www.youtube.com/watch?v=cQElYrR9F6k)
+
 ># Marco de Entrega 03: Itens 10 e 11<br>
 <br>
 <br>
